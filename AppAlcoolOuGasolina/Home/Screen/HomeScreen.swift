@@ -51,7 +51,6 @@ class HomeScreen: UIView {
     }()
     
     @objc func tappedStartButton() {
-        print(#function)
         delegate?.tappedStartButton()
     }
 

@@ -30,7 +30,8 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: HomeScreenDelegate {
     func tappedStartButton() {
-        print(#function)
+        let viewControler = CalculatorViewController()
+        navigationController?.pushViewController(viewControler, animated: true)
     }
     
 }
