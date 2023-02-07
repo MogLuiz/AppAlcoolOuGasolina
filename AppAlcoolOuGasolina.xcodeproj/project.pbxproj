@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE000BD9299266F10039CDB7 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE000BD8299266F10039CDB7 /* CalculatorViewController.swift */; };
+		CE000BDC299268370039CDB7 /* CalculatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE000BDB299268370039CDB7 /* CalculatorScreen.swift */; };
 		CE9159DF2991DABC000FE1C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9159DE2991DABC000FE1C7 /* AppDelegate.swift */; };
 		CE9159E12991DABC000FE1C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9159E02991DABC000FE1C7 /* SceneDelegate.swift */; };
 		CE9159E32991DABC000FE1C7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9159E22991DABC000FE1C7 /* HomeViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		CE000BD8299266F10039CDB7 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		CE000BDB299268370039CDB7 /* CalculatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreen.swift; sourceTree = "<group>"; };
 		CE9159DB2991DABC000FE1C7 /* AppAlcoolOuGasolina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAlcoolOuGasolina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9159DE2991DABC000FE1C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9159E02991DABC000FE1C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,9 +44,18 @@
 		CE000BD7299266C10039CDB7 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
+				CE000BDA299268010039CDB7 /* Screen */,
 				CE000BD8299266F10039CDB7 /* CalculatorViewController.swift */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		CE000BDA299268010039CDB7 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CE000BDB299268370039CDB7 /* CalculatorScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 		CE9159D22991DABB000FE1C7 = {
@@ -169,6 +180,7 @@
 				CE9159E32991DABC000FE1C7 /* HomeViewController.swift in Sources */,
 				CE9159DF2991DABC000FE1C7 /* AppDelegate.swift in Sources */,
 				CE9159E12991DABC000FE1C7 /* SceneDelegate.swift in Sources */,
+				CE000BDC299268370039CDB7 /* CalculatorScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
