@@ -48,6 +48,19 @@ class CalculatorScreen: UIView {
         tf.placeholder = "Preço da Gasolina"
         return tf
     }()
+    
+    lazy var calculateButton: UIButton = {
+        let button = UIButton()
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Calcular", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        button.setTitleColor(.white, for: .normal)
+        button.clipsToBounds = true
+        button.layer.cornerRadius = 8
+        button.backgroundColor = UIColor(red: 128/255, green: 128/255, blue: 128/255, alpha: 1.0)
+//        button.addTarget(<#T##target: Any?##Any?#>, action: <#T##Selector#>, for: <#T##UIControl.Event#>)
+        return button
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -55,6 +68,7 @@ class CalculatorScreen: UIView {
         addSubview(logoAppImageView)
         addSubview(ethanolPriceTextField)
         addSubview(gasPriceTextField)
+        addSubview(calculateButton)
         configConstraints()
     }
     
@@ -82,6 +96,11 @@ class CalculatorScreen: UIView {
             gasPriceTextField.leadingAnchor.constraint(equalTo: ethanolPriceTextField.leadingAnchor),
             gasPriceTextField.trailingAnchor.constraint(equalTo: ethanolPriceTextField.trailingAnchor),
             gasPriceTextField.heightAnchor.constraint(equalTo: ethanolPriceTextField.heightAnchor),
+            
+            calculateButton.topAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -135),
+            calculateButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 60),
+            calculateButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -60),
+            calculateButton.heightAnchor.constraint(equalToConstant: 44)
         ])
     }
 
