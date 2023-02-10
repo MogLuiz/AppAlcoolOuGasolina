@@ -7,7 +7,18 @@
 
 import UIKit
 
+protocol CalculatorScreenDelegate: AnyObject {
+    func tappedCalculateButton()
+    func tappedBackButton()
+}
+
 class CalculatorScreen: UIView {
+    
+    private weak var delegate: CalculatorScreenDelegate?
+    
+    public func delegate(delegate: CalculatorScreenDelegate?) {
+        self.delegate = delegate
+    }
     
     lazy var backgroundImageView: UIImageView = {
         let image = UIImageView()
@@ -61,6 +72,8 @@ class CalculatorScreen: UIView {
 //        button.addTarget(<#T##target: Any?##Any?#>, action: <#T##Selector#>, for: <#T##UIControl.Event#>)
         return button
     }()
+    
+    
     
     lazy var backButton: UIButton = {
         let button = UIButton()
