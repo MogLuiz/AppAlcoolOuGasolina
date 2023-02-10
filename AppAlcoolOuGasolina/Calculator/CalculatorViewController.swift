@@ -29,6 +29,6 @@ extension CalculatorViewController: CalculatorScreenDelegate {
     }
     
     func tappedBackButton() {
-        print(#function)
+        navigationController?.popViewController(animated: true)
     }
 }
