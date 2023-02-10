@@ -16,6 +16,8 @@
 		CE9159E82991DABD000FE1C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9159E72991DABD000FE1C7 /* Assets.xcassets */; };
 		CE9159EB2991DABD000FE1C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9159E92991DABD000FE1C7 /* LaunchScreen.storyboard */; };
 		CE9159F52991E1F9000FE1C7 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9159F42991E1F9000FE1C7 /* HomeScreen.swift */; };
+		CEFB8713299650F4002C7E15 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB8712299650F4002C7E15 /* ResultViewController.swift */; };
+		CEFB871629965160002C7E15 /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB871529965160002C7E15 /* ResultScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		CE9159EA2991DABD000FE1C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9159EC2991DABD000FE1C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9159F42991E1F9000FE1C7 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		CEFB8712299650F4002C7E15 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		CEFB871529965160002C7E15 /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		CE9159DD2991DABC000FE1C7 /* AppAlcoolOuGasolina */ = {
 			isa = PBXGroup;
 			children = (
+				CEFB8711299650AE002C7E15 /* Result */,
 				CE7D00F22995D5ED000F88F4 /* Alert */,
 				CE000BD7299266C10039CDB7 /* Calculator */,
 				CE9159F22991E1A4000FE1C7 /* Home */,
@@ -112,6 +117,23 @@
 			isa = PBXGroup;
 			children = (
 				CE9159F42991E1F9000FE1C7 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		CEFB8711299650AE002C7E15 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB871429965124002C7E15 /* Screen */,
+				CEFB8712299650F4002C7E15 /* ResultViewController.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		CEFB871429965124002C7E15 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB871529965160002C7E15 /* ResultScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -189,6 +211,8 @@
 				CE000BD9299266F10039CDB7 /* CalculatorViewController.swift in Sources */,
 				CE9159F52991E1F9000FE1C7 /* HomeScreen.swift in Sources */,
 				CE9159E32991DABC000FE1C7 /* HomeViewController.swift in Sources */,
+				CEFB8713299650F4002C7E15 /* ResultViewController.swift in Sources */,
+				CEFB871629965160002C7E15 /* ResultScreen.swift in Sources */,
 				CE9159DF2991DABC000FE1C7 /* AppDelegate.swift in Sources */,
 				CE9159E12991DABC000FE1C7 /* SceneDelegate.swift in Sources */,
 				CE000BDC299268370039CDB7 /* CalculatorScreen.swift in Sources */,
