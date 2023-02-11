@@ -18,9 +18,21 @@ class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        screen?.delegate(delegate: self)
     }
     
+    func popViewController() {
+        navigationController?.popViewController(animated: true)
+    }
+    
+}
 
-
+extension ResultViewController: ResultScreenDelegate {
+    func tappedBackButton() {
+        popViewController()
+    }
+    
+    func tappedCalculateButtonAgain() {
+        popViewController()
+    }
 }
